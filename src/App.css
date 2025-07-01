@@ -1,0 +1,37 @@
+.image {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* overflow: hidden; */
+}
+img {
+    width: 500px;
+    height: 100%;
+}
+h1 {
+    text-align: center;
+}
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.rejectbtn {
+    background-color: #480000;
+}
+.acceptbtn {
+    background-color: #69ff4a;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+}

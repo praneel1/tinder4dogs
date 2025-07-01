@@ -15,19 +15,19 @@ function Image() {
     }
 
   return (
-    <div className="image">
-
+    <div className="wrapper">
     <button className='rejectbtn' onClick={fetchDog}>❌</button>
     
+    <div className="image">
     {loading ? (<p>Loading...</p>): (
-        <>
+      <>
         <img src={img} alt='Random dog pic'/>
         </>
     )}
+    </div>
 
     <button className='acceptbtn' onClick={fetchDog}>💓</button>
     </div>
-    
   )
 }
 
