@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Image() {
 
@@ -14,20 +14,18 @@ function Image() {
 
     }
 
+    useEffect(()=>(fetchDog),[])
+
   return (
     <div className="wrapper">
-    <button className='rejectbtn' onClick={fetchDog}>❌</button>
-    
-    <div className="image">
-    {loading ? (<p>Loading...</p>): (
-      <>
-        <img src={img} alt='Random dog pic'/>
-        </>
-    )}
-    </div>
-
-    <button className='acceptbtn' onClick={fetchDog}>💓</button>
-    </div>
+  <div className="image">
+    {loading ? <p>Loading...</p> : <img src={img} alt="Random dog" />}
+  </div>
+  <div className="buttons">
+    <button className="rejectbtn" onClick={fetchDog}>❌</button>
+    <button className="acceptbtn" onClick={fetchDog}>💓</button>
+  </div>
+</div>
   )
 }
 
